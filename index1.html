@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/test.css">
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script lang="java">
+        $(document).ready(function () {
+
+            $(".btn_01").click(function () {
+                alert("버튼1을 클릭하셨습니다.");
+                $(this).css("color", "blue")
+            }) //btn_01 click
+
+            $(".btn_02").click(function () {
+                alert("버튼2를 클릭하셨습니다.");
+                $(this).css("width", "200px").css("height", "100px")
+            }) //btn_02 click
+
+            $(".btn_03").click(function () {
+                console.log("버튼3을 클릭하셨습니다.");
+                $(this).css({"width" : "150px" , "height" : "50px"})
+            }) //btn_03 click
+
+            $(".btn_04").click(function () {
+                console.log("버튼4를 클릭하셨습니다.");
+                $(this).css({"color" : "black", "width" : "200px", "height" : "70px"})
+            }) //btn_04 click
+
+        }) //jQuery end
+    </script>
+
+    <style type="text/css">
+        body {
+            background-color: #444;
+            padding: 20px;
+        }
+
+        .container {}
+
+        .container h1 {
+            margin-bottom: 50px;
+            color: white;
+        }
+
+        .container button {
+            padding: 5px 20px;
+            background-color: crimson;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+        .container button:hover {
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>basic jQuery</h1>
+
+        <button class="btn_01">button01</button>
+        <button class="btn_02">button02</button>
+        <button class="btn_03">button03</button>
+        <button class="btn_04">button04</button>
+    </div><!-- container -->
+</body>
+
+</html>

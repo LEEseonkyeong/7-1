@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/jquery-ui.js"></script>
+
+    <script lang="java">
+        $(function () {
+            $(".left").click(function(){
+                $(".round").animate({"left" : "+=50px"}, 300);
+            }) //left click
+
+            $(".right").click(function(){
+                $(".round").animate({"left" : "-=50px"}, 300);
+            }) //right click
+
+            $(".up").click(function(){
+                $(".round").animate({"top" : "+=50px"}, 300);
+            }) //up click
+
+            $(".down").click(function(){
+                $(".round").animate({"top" : "-=50px"}, 300);
+            }) //down click
+
+        }) //jQuery
+    </script>
+
+    <style type="text/css">
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .box {
+            width: 500px;
+            height: 300px;
+            border: 2px solid palevioletred;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .round {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: gold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>jQuery Event</h1>
+
+    <button class="left">left</button>
+    <button class="right">right</button>
+    <button class="up">up</button>
+    <button class="down">down</button>
+
+    <div class="box">
+        <div class="round"></div>
+    </div>
+</body>
+
+</html>

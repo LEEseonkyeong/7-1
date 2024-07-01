@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="script/jquery-3.7.1.js"></script>
+
+    <script src="script/main.js"></script>
+
+    <style type="text/css">
+        .box {
+            width: 250px;
+            height: 250px;
+            border: 10px solid gold;
+            position: relative;
+        }
+
+        .btn {
+            width: 50px;
+            height: 250px;
+            position: absolute;
+            z-index: 5;
+        }
+
+        .img_box {
+            width: 0%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 4;
+            opacity: 0;
+        }
+
+        .img_box img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>basic jQuery 이미지 가로 크기 변경하는 animate</h1>
+    <div class="box">
+        <button class="btn">클릭</button>
+        <div class="img_box">
+            <img src="img/cream.png" alt="cream">
+        </div>
+    </div>
+</body>
+
+</html>
